@@ -29,12 +29,12 @@ android {
                 "proguard-rules.pro"
             )
             resValue("string", "victorsdd", "Horoscapp")
-            buildConfigField("String", "BASE_URL", "https://newastro.vercel.app/")
+            buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
         }
         getByName("debug") {
             isDebuggable = true
             resValue("string", "victorsdd", "Horoscapp[DEVELOP]")
-            buildConfigField("String", "BASE_URL", "https://newastro-debug.vercel.app/")
+            buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app/\"")
         }
     }
     compileOptions {
