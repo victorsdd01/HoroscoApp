@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/horoscopeFragment">
+
+    <fragment
+        android:id="@+id/horoscopeFragment"
+        android:name="com.victorsdd.horoscapp.ui.horoscope.HoroscopeFragment"
+        android:label="fragment_horoscope"
+        tools:layout="@layout/fragment_horoscope" >
+        <action
+            android:id="@+id/action_horoscopeFragment_to_detailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/luckFragment"
+        android:name="com.victorsdd.horoscapp.ui.luck.LuckFragment"
+        android:label="fragment_luck"
+        tools:layout="@layout/fragment_luck" />
+    <fragment
+        android:id="@+id/palmistryFragment"
+        android:name="com.victorsdd.horoscapp.ui.palmistry.PalmistryFragment"
+        android:label="fragment_palmistry"
+        tools:layout="@layout/fragment_palmistry" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.victorsdd.horoscapp.ui.home.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.victorsdd.horoscapp.ui.detail.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" >
+        <argument
+            android:name="type"
+            app:argType="com.victorsdd.horoscapp.domain.model.HoroscopeModel" />
+    </activity>
+</navigation>
