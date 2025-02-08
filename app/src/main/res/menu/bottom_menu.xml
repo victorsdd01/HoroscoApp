@@ -5,16 +5,15 @@
         android:title="@string/horoscope"
         android:icon="@drawable/ic_horoscope"
         />
-
+    <item
+        android:id="@+id/luckFragment"
+        android:title="@string/luck"
+        android:icon="@drawable/ic_cards"
+        />
     <item
         android:id="@+id/palmistryFragment"
         android:title="@string/palmistry"
         android:icon="@drawable/ic_hand"
-        />
-    <item
-        android:id="@+id/luckyFragment"
-        android:title="@string/luck"
-        android:icon="@drawable/ic_cards"
         />
 
 </menu>
