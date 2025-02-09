@@ -72,6 +72,14 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.gson)
     implementation(libs.logger.interceptor)
+    implementation(libs.camera.core)
+    implementation(libs.camera.camera2)
+    implementation(libs.camera.lifecycle)
+
+    // Opcionales
+    implementation(libs.camera.video)
+    implementation(libs.camera.view)
+    implementation(libs.camera.extensions)
     // Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)

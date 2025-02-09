@@ -14,6 +14,7 @@ hilt = "2.55"
 retrofit = "2.11.0"
 gson = "2.10.1"
 loggerInterceptor = "4.11.0"
+cameraVersion = "1.4.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -33,6 +34,12 @@ retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = 
 converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 logger-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggerInterceptor" }
+camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "cameraVersion" }
+camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "cameraVersion" }
+camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraVersion" }
+camera-video = { group = "androidx.camera", name = "camera-video", version.ref = "cameraVersion" }
+camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraVersion" }
+camera-extensions = { group = "androidx.camera", name = "camera-extensions", version.ref = "cameraVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
